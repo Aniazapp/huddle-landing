@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap'); /*Poppins 400/600*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap'); /*Open Sans 400*/
+
+body {
+    background: url(../huddle-landing/images/bg-desktop.svg);
+    background-color: hsl(257, 40%, 49%);
+    background-size: auto;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+}
+
+.images img{
+    display: flex;
+    margin-top:90px;
+    margin-left: 165px;
+    display: flex;
+    flex-direction: column;
+    width:600px ;
+    height:450px;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    width:30% ;
+    height: 90%;
+    margin-left: 50px;
+    margin-top: 200px;
+}
+
+.title{
+    font-family: "Poppins";
+    font-weight: 600;
+    color: white;
+}
+
+.text{
+    font-family: "Open Sans";
+    font-weight: 400;
+    color: white;
+    font-size: 0.87em;
+}
+
+.button{
+    color: hsl(257, 40%, 49%);
+    width: 155px;
+    border: none;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 2px 2px hsl(257, 47%, 43%);
+    
+}
+
+.logo img{
+    margin-left: 163px;
+    margin-top:50px;
+    width: 145px;
+    height: 45px;
+}
+
+.icon{
+    background-color:white;
+    color: hsl(257, 40%, 49%);
+    padding: 1px;
+    border-radius: 13px;
+    font-size: 22px;
+    margin-right: 8px;
+}
+
+.networks{
+    display: flex;
+    flex-grow: 1;
+    align-items: end;
+    justify-content: end;
+    margin-top: 45%;
+}
+
+
+
+@media (max-width: 768px) {
+    body {
+        background: url(../huddle-landing/images/bg-mobile.svg);
+        background-color: hsl(257, 40%, 49%);
+        background-size:contain;
+        background-repeat: no-repeat;
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-left: 0px;
+    }
+
+    .images img{
+        margin-left:0px;
+        margin-right: 0px;
+        width: 80vw;
+        height: 27vh;
+        margin-top: -5px;
+    }
+
+    .images .logo img{
+        width: 30vw;
+        height: 15vh;
+        justify-content: left;
+    }
+
+
+    .content{
+    display: flex;
+    flex-direction: column;
+    width:70% ;
+    height: 50%;
+    margin-left: 0px;
+    margin-top: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+.title{
+    display: flex;
+    font-family: "Poppins";
+    font-weight: 400;
+    color: white;
+    font-size: 0.75em; 
+    text-align: center;
+}
+
+.text{
+    font-family: "Open Sans";
+    font-weight: 400;
+    color: white;
+    font-size: 0.87em;
+    text-align: center;
+    margin-top: -25px;
+}
+
+.networks{
+    margin-top: 50px;
+}
+
+}
